@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  sleep_time: 2024-12-03 08:18:12
+  wake_time: 2024-12-03 08:18:12
+  duration: 1
+
+two:
+  user: two
+  sleep_time: 2024-12-03 08:18:12
+  wake_time: 2024-12-03 08:18:12
+  duration: 1
