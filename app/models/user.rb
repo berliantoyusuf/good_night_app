@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  validates :name, presence: true
   has_many :sleep_records, dependent: :destroy
 
   # Users who follow this user
