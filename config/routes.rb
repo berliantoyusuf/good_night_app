@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :users, only: [] do
+    resources :sleep_records, only: [:create, :index]
+    get 'following_sleep_records', to: 'following_sleep_records#index'
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :followers, only: [:create] do
+    delete :unfollow, on: :collection
+  end
 end
